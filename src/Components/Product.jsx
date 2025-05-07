@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Button } from "@/Components/ui/button";
+// import { Button } from "@/Components/ui/button";
 // import { ShoppingBagIcon, HeartIcon } from "@heroicons/react/24/outline"
 import { ArrowRight } from 'lucide-react';
 export default function Product() {

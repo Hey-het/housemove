@@ -1,6 +1,6 @@
 import Image from "next/image";
 // import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/ui/button";
 
 export default function Banner() {
   return (
