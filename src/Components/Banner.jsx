@@ -36,10 +36,10 @@ export default function Banner() {
             placeholder="e.g. Bath, NW3, or Leeds station"
             className="w-full md:flex-1 px-4 py-3"
           /> */}
-          <Button className="bg-teal-500 text-white hover:bg-teal-600 w-full md:w-auto">
+          <Button className="bg-teal-500 text-white hover:bg-teal-600 w-full md:w-auto cursor-pointer">
             For sale
           </Button>
-          <Button className="bg-teal-500 text-white hover:bg-teal-600 w-full md:w-auto">
+          <Button className="bg-teal-500 text-white hover:bg-teal-600 w-full md:w-auto cursor-pointer">
             To rent
           </Button>
         </div>
