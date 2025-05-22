@@ -1,4 +1,6 @@
-import { db } from "@/utils/dbConnection";
+import {db} from "@/utils/dbConnection";
+
+// import { redirect } from "next/navigation";
 import Link from "next/link";
 
 export default async function HouseDetails({ params }) {

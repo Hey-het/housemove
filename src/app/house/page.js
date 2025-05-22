@@ -1,4 +1,4 @@
-import { db } from "@/utils/dbConnection"
+import  {db} from "@/utils/dbConnection";
 import Link from "next/link";
 
 export default async function HouseData({ searchParams }) {
@@ -8,11 +8,11 @@ export default async function HouseData({ searchParams }) {
     const houseData = (await db.query(`SELECT * FROM houses order by price desc`)).rows;
     // console.log(houseData);
 
-     if (searchParams .sort === "asc") {
+     if (searchParams.sort === "asc") {
         houseData.reverse();
         sortValue = "a";
     }
-    else if(searchParams .sort === "desc") {
+    else if(searchParams.sort === "desc") {
         sortValue = "d";
     }
 
