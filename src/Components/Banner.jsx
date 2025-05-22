@@ -1,6 +1,7 @@
 import Image from "next/image";
 // import { Input } from "@/components/ui/input";
 import { Button } from "@/Components/ui/button";
+import Link from "next/link";
 
 export default function Banner() {
   return (
@@ -37,7 +38,9 @@ export default function Banner() {
             className="w-full md:flex-1 px-4 py-3"
           /> */}
           <Button className="bg-teal-500 text-white hover:bg-teal-600 w-full md:w-auto cursor-pointer">
+           <Link href="/house">
             For sale
+            </Link>
           </Button>
           <Button className="bg-teal-500 text-white hover:bg-teal-600 w-full md:w-auto cursor-pointer">
             To rent

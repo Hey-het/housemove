@@ -1,54 +1,95 @@
-import { Home, UserIcon } from "@heroicons/react/24/outline";
-
 export default function Header() {
-    return (
-        <>
-            <div className="navbar bg-base-100 shadow-sm px-25 ">
-                <div className="navbar-start ">
-                    <div className="dropdown ">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-                        </div>
-                        <ul
-                            tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Item 3</a></li>
-                            <li><a>Item 3</a></li>
-                            <li><a>Item 3</a></li>
-                            <li><a>Item 3</a></li>
-                            <li><a>Item 3</a></li>
-                            <li><a>Item 3</a></li>
-                            <li><a>Item 3</a></li>
-                        </ul>
-                    </div>
-                    <a className="btn btn-ghost text-bold text-xl">
-                         housemove
-                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 ">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                        </svg>
-                        
-                         </a>
-                </div>
-                <div className="navbar-center hidden lg:flex ">
-                    <ul className="menu menu-horizontal px-1 ">
-                        <li><a className="font-semibold">Buy</a></li>
-                        <li><a className="font-semibold">Rent</a></li>
-                        <li><a className="font-semibold">House Price</a></li>
-                        <li><a className="font-semibold">Find Agent</a></li>
-                        <li><a className="font-semibold">Commercial</a></li>
-                        <li><a className="font-semibold">Inspire</a></li>
-                        <li><a className="font-semibold">Overseas</a></li>
-                    </ul>
+  return (
+    <>  
+    <nav className="navbar  px-5 top-0 left-0 w-full z-50 border-b">  
+    <div className="w-full  z-50">
+      <div className="flex items-center justify-between px-6 py-3 max-w-7xl mx-auto">
+        {/* Logo */}
+        <div className="text-xl font-bold text-blue-900">rightmove<span className="text-green-500">▵</span></div>
 
-                </div>
-                <div className="navbar-end ">
-                    <a className="btn gap-2 rounded-lg border-2 border-green-300 hover:bg-green-300">
-                        < UserIcon className="h-5 w-5" />
-                        Sign In
-                    </a>
-                </div>
+        {/* Navigation Items */}
+        <div className="hidden md:flex space-x-6 text-sm font-medium text-blue-900 relative">
+          <div className="group relative cursor-pointer hover:border-b-2  border-blue-900">
+            <span className="hover:border-b-2  border-blue-900 p-3 hover:bg-gray-100">Buy</span>
+            <div className="absolute left-0 top-full mt-2 hidden group-hover:block bg-gray-100 shadow-md w-screen px-10 py-6">
+              <div className=" mx-auto mr-64 grid grid-cols-2 ">
+                <div className="text-sm hover:underline">Property for sale</div>
+                <div className="text-sm hover:underline">New homes</div>
+                <div className="text-sm hover:underline">Property valuation</div>
+                <div className="text-sm hover:underline">Investors</div>
+                <div className="text-sm hover:underline">Mortgages</div>
+              </div>
             </div>
+          </div>
 
-        </>
-    );
+          <div className="group relative cursor-pointer hover:border-b-2  border-blue-900">
+            <span className="hover:border-b-2 border-blue-900 p-3 hover:bg-gray-100">Rent</span>
+            <div className="absolute left-0 top-full mt-2 hidden group-hover:block bg-gray-100 shadow-md w-screen px-10 py-6">
+              <div className="max-w-5xl mx-auto grid grid-cols-2 gap-4">
+                <div className="text-sm hover:underline">Property to rent</div>
+                <div className="text-sm hover:underline">Student property to rent</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="group relative cursor-pointer hover:border-b-2  border-blue-900">
+            <span className="hover:border-b-2 border-blue-900 p-3 hover:bg-gray-100">House Prices</span>
+            <div className="absolute left-0 top-full mt-2 hidden group-hover:block bg-gray-100 shadow-md w-screen px-10 py-6">
+              <div className="max-w-5xl mx-auto grid grid-cols-2 gap-4">
+                <div className="text-sm hover:underline">Sold house prices</div>
+                <div className="text-sm hover:underline">Market trends</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="group relative cursor-pointer hover:border-b-2  border-blue-900">
+            <span className="hover:border-b-2 border-blue-900 p-3 hover:bg-gray-100">Find Agent</span>
+            <div className="absolute left-0 top-full mt-2 hidden group-hover:block bg-gray-100 shadow-md w-screen px-10 py-6">
+              <div className="max-w-5xl mx-auto grid grid-cols-2 gap-4">
+                <div className="text-sm hover:underline">Estate agents</div>
+                <div className="text-sm hover:underline">Letting agents</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="group relative cursor-pointer hover:border-b-2  border-blue-900">
+            <span className="hover:border-b-2 border-blue-900 p-3 hover:bg-gray-100">Commercial</span>
+            <div className="absolute left-0 top-full mt-2 hidden group-hover:block bg-gray-100 shadow-md w-screen px-10 py-6">
+              <div className="max-w-5xl mx-auto grid grid-cols-2 gap-4">
+                <div className="text-sm hover:underline">Shops</div>
+                <div className="text-sm hover:underline">Offices</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="group relative cursor-pointer hover:border-b-2  border-blue-900">
+            <span className="hover:border-b-2 border-blue-900 p-3 hover:bg-gray-100">Inspire</span>
+            <div className="absolute left-0 top-full mt-2 hidden group-hover:block bg-gray-100 shadow-md w-screen px-10 py-6">
+              <div className="max-w-5xl mx-auto grid grid-cols-2 gap-4">
+                <div className="text-sm hover:underline">Blogs</div>
+                <div className="text-sm hover:underline">Ideas</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="group relative cursor-pointer hover:border-b-2  border-blue-900">
+            <span className="hover:border-b-2 border-blue-900 p-3 hover:bg-gray-100">Overseas</span>
+            <div className="absolute left-0 top-full mt-2 hidden group-hover:block bg-gray-100 shadow-md w-screen px-10 py-6">
+              <div className="max-w-5xl mx-auto grid grid-cols-2 gap-4">
+                <div className="text-sm hover:underline">Properties abroad</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Sign In */}
+        <button className="btn border border-green-400 text-sm font-semibold text-blue-900 px-4 py-1 rounded hover:bg-green-100">
+          Sign in
+        </button>
+      </div>
+    </div>
+    </nav>
+    </>
+
+  );
 }
